@@ -66,5 +66,10 @@ namespace InventoryManagementApplication
             lbl_time.Text += DateTime.Now.Second.ToString("0#");
 
         }
+
+        private void btn_company_info_Click(object sender, EventArgs e)
+        {
+            new frm_company_info().ShowDialog();
+        }
     }
 }
