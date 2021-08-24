@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace InventoryManagementApplication
 {
-    public partial class Form1 : Form
+    public partial class FormMenu : Form
     {
-        public Form1()
+        public FormMenu()
         {
             InitializeComponent();
         }
@@ -69,7 +69,23 @@ namespace InventoryManagementApplication
 
         private void btn_company_info_Click(object sender, EventArgs e)
         {
-            new frm_company_info().ShowDialog();
+            new FormCompanies().ShowDialog();
+        }
+
+        private void btn_customers_info_Click(object sender, EventArgs e)
+        {
+            new FormPersons().ShowDialog();
+
+        }
+
+        private void btn_customers_report_Click(object sender, EventArgs e)
+        {
+            new FormPersonsReport().ShowDialog();
+        }
+
+        private void btn_groups_info_Click(object sender, EventArgs e)
+        {
+            new FormGroups().ShowDialog();
         }
     }
 }

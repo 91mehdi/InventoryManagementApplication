@@ -10,9 +10,9 @@ using System.Data.SqlClient;
 
 namespace InventoryManagementApplication
 {
-    public partial class frm_company_info : Form
+    public partial class FormCompanies : Form
     {
-        public frm_company_info()
+        public FormCompanies()
         {
             InitializeComponent();
         }
@@ -48,6 +48,7 @@ namespace InventoryManagementApplication
             }
 
             SqlCommand.ExecuteNonQuery();
+            SqlCommand.Parameters.Clear();
             connection.Close();
             MessageBox.Show("اطلاعات با موفقیت ثبت شد");
             txt_code.Text = txt_company_address.Text = txt_company_name.Text = txt_company_owner.Text = txt_fax.Text = txt_telephone.Text = "";
@@ -66,6 +67,7 @@ namespace InventoryManagementApplication
             }
 
             SqlCommand.ExecuteNonQuery();
+            SqlCommand.Parameters.Clear();
             connection.Close();
             MessageBox.Show("اطلاعات با موفقیت ویرایش شد");
             txt_code.Text = txt_company_address.Text = txt_company_name.Text = txt_company_owner.Text = txt_fax.Text = txt_telephone.Text = "";
@@ -89,7 +91,7 @@ namespace InventoryManagementApplication
         private void button1_Click_1(object sender, EventArgs e)
         {
             SqlDataReader sqlDataReader;
-            //SqlCommand = new SqlCommand();
+            SqlCommand = new SqlCommand();
             SqlCommand.Connection = connection;
             SqlCommand.Parameters.Clear();
             SqlCommand.CommandText = "SELECT * FROM CompanyTable WHERE CompanyCode=@C_CODE";
@@ -117,6 +119,7 @@ namespace InventoryManagementApplication
                 txt_code.Text = "";
             }
 
+            SqlCommand.Parameters.Clear();
             connection.Close();
 
         }
@@ -127,6 +130,56 @@ namespace InventoryManagementApplication
         }
 
         private void txt_code_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_company_address_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_fax_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_company_owner_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_telephone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
