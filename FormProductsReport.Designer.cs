@@ -122,7 +122,7 @@ namespace InventoryManagementApplication
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(182, 23);
             this.txt_name.TabIndex = 3;
-            this.txt_name.Text = "نام شخص را وارد کنید";
+            this.txt_name.Text = "نام کالا را وارد کنید";
             this.txt_name.TextChanged += new System.EventHandler(this.txt_name_TextChanged);
             // 
             // cmb_group
