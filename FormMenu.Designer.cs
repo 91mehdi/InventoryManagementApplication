@@ -213,6 +213,7 @@ namespace InventoryManagementApplication
             this.btn_products_info.Name = "btn_products_info";
             this.btn_products_info.Size = new System.Drawing.Size(180, 22);
             this.btn_products_info.Text = "تعریف کالا";
+            this.btn_products_info.Click += new System.EventHandler(this.btn_products_info_Click);
             // 
             // btn_customers_info
             // 

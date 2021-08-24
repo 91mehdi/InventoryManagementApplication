@@ -63,6 +63,7 @@ namespace InventoryManagementApplication
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(182, 23);
             this.txt_name.TabIndex = 1;
+            this.txt_name.TextChanged += new System.EventHandler(this.txt_name_TextChanged_1);
             // 
             // label1
             // 
@@ -157,6 +158,7 @@ namespace InventoryManagementApplication
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "گروه کالا";
+            this.Load += new System.EventHandler(this.FormGroups_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);

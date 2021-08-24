@@ -47,7 +47,7 @@ namespace InventoryManagementApplication
             command.Connection = connection;
             command.Parameters.Clear();
             command.CommandText = "INSERT INTO GroupsTable(GroupName) VALUES (@G_NAME)";
-            command.Parameters.AddWithValue("@G_NAME", txt_code.Text);
+            command.Parameters.AddWithValue("@G_NAME", txt_name.Text);
 
             if (!(connection.State == ConnectionState.Open))
             {
@@ -55,14 +55,12 @@ namespace InventoryManagementApplication
             }
             command.ExecuteNonQuery();
             connection.Close();
+            ShowReports();
             MessageBox.Show("اطلاعات ذخیره شد");
 
         }
 
-        private void txt_name_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void btn_remove_Click(object sender, EventArgs e)
         {
@@ -78,6 +76,7 @@ namespace InventoryManagementApplication
             }
             command.ExecuteNonQuery();
             connection.Close();
+            ShowReports();
             MessageBox.Show("اطلاعات حذف شد");
 
         }
@@ -88,6 +87,20 @@ namespace InventoryManagementApplication
         }
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void FormGroups_Load(object sender, EventArgs e)
+        {
+            ShowReports();
+        }
+
+        private void txt_name_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+        private void txt_name_TextChanged(object sender, EventArgs e)
         {
 
         }

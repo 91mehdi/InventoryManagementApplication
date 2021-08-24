@@ -44,9 +44,9 @@ namespace InventoryManagementApplication
             this.txt_code = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_back = new System.Windows.Forms.Button();
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -124,7 +124,7 @@ namespace InventoryManagementApplication
             // 
             // txt_company_owner
             // 
-            this.txt_company_owner.Location = new System.Drawing.Point(24, 37);
+            this.txt_company_owner.Location = new System.Drawing.Point(24, 41);
             this.txt_company_owner.Name = "txt_company_owner";
             this.txt_company_owner.Size = new System.Drawing.Size(182, 23);
             this.txt_company_owner.TabIndex = 3;
@@ -207,6 +207,16 @@ namespace InventoryManagementApplication
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(12, 12);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(75, 33);
+            this.btn_back.TabIndex = 2;
+            this.btn_back.Text = "بازگشت";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // btn_edit
             // 
             this.btn_edit.Location = new System.Drawing.Point(413, 12);
@@ -226,16 +236,6 @@ namespace InventoryManagementApplication
             this.btn_save.Text = "ذخیره";
             this.btn_save.UseVisualStyleBackColor = true;
             this.btn_save.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btn_back
-            // 
-            this.btn_back.Location = new System.Drawing.Point(12, 12);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(75, 33);
-            this.btn_back.TabIndex = 2;
-            this.btn_back.Text = "بازگشت";
-            this.btn_back.UseVisualStyleBackColor = true;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // FormCompanies
             // 
