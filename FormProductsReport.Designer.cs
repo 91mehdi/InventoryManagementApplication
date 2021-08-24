@@ -1,7 +1,7 @@
 ﻿
 namespace InventoryManagementApplication
 {
-    partial class FormPersonsReport
+    partial class FormProductsReport
     {
         /// <summary>
         /// Required designer variable.
@@ -36,8 +36,8 @@ namespace InventoryManagementApplication
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.cmb_type = new System.Windows.Forms.ComboBox();
             this.txt_name = new System.Windows.Forms.TextBox();
+            this.cmb_group = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -53,7 +53,7 @@ namespace InventoryManagementApplication
             this.groupBox1.Location = new System.Drawing.Point(0, 144);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(584, 57);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
             // btn_print
@@ -91,7 +91,7 @@ namespace InventoryManagementApplication
             this.groupBox3.Location = new System.Drawing.Point(0, 45);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(584, 105);
-            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             // 
             // dataGridView
@@ -104,32 +104,17 @@ namespace InventoryManagementApplication
             this.dataGridView.ReadOnly = true;
             this.dataGridView.Size = new System.Drawing.Size(578, 83);
             this.dataGridView.TabIndex = 0;
-            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.cmb_type);
+            this.groupBox4.Controls.Add(this.cmb_group);
             this.groupBox4.Controls.Add(this.txt_name);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(584, 39);
-            this.groupBox4.TabIndex = 2;
+            this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
-            // 
-            // cmb_type
-            // 
-            this.cmb_type.FormattingEnabled = true;
-            this.cmb_type.Items.AddRange(new object[] {
-            "مشتری",
-            "کارمند",
-            "کارگر",
-            "فروشنده"});
-            this.cmb_type.Location = new System.Drawing.Point(202, 10);
-            this.cmb_type.Name = "cmb_type";
-            this.cmb_type.Size = new System.Drawing.Size(182, 24);
-            this.cmb_type.TabIndex = 4;
-            this.cmb_type.Text = "نوع شخص را مشخص کنید";
             // 
             // txt_name
             // 
@@ -138,20 +123,33 @@ namespace InventoryManagementApplication
             this.txt_name.Size = new System.Drawing.Size(182, 23);
             this.txt_name.TabIndex = 3;
             this.txt_name.Text = "نام شخص را وارد کنید";
+            this.txt_name.TextChanged += new System.EventHandler(this.txt_name_TextChanged);
             // 
-            // FormPersonsReport
+            // cmb_group
             // 
+            this.cmb_group.FormattingEnabled = true;
+            this.cmb_group.Location = new System.Drawing.Point(202, 9);
+            this.cmb_group.Name = "cmb_group";
+            this.cmb_group.Size = new System.Drawing.Size(182, 24);
+            this.cmb_group.TabIndex = 4;
+            this.cmb_group.SelectedIndexChanged += new System.EventHandler(this.cmb_group_SelectedIndexChanged);
+            // 
+            // FormProductsReport
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 201);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox4);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "FormPersonsReport";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FormProductsReport";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "گزارش اشخاص";
-            this.Load += new System.EventHandler(this.FormPersonsReport_Load);
+            this.Text = "گزارش کالا";
+            this.Load += new System.EventHandler(this.FormProductsReport_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
@@ -163,19 +161,14 @@ namespace InventoryManagementApplication
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btn_back;
-        private System.Windows.Forms.Button btn_edit;
-        private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_remove;
+        private System.Windows.Forms.Button btn_print;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_remove;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox txt_name;
-        private System.Windows.Forms.ComboBox cmb_type;
-        private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.Button btn_print;
+        private System.Windows.Forms.ComboBox cmb_group;
     }
 }
