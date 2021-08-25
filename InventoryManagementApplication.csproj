@@ -50,6 +50,12 @@
     <Compile Include="FormGroups.Designer.cs">
       <DependentUpon>FormGroups.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInitialInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInitialInventory.Designer.cs">
+      <DependentUpon>FormInitialInventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInventories.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormGroups.resx">
       <DependentUpon>FormGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInitialInventory.resx">
+      <DependentUpon>FormInitialInventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInventories.resx">
       <DependentUpon>FormInventories.cs</DependentUpon>

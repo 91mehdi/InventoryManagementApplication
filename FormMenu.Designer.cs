@@ -191,42 +191,42 @@ namespace InventoryManagementApplication
             // btn_company_info
             // 
             this.btn_company_info.Name = "btn_company_info";
-            this.btn_company_info.Size = new System.Drawing.Size(180, 22);
+            this.btn_company_info.Size = new System.Drawing.Size(151, 22);
             this.btn_company_info.Text = "تعریف شرکت";
             this.btn_company_info.Click += new System.EventHandler(this.btn_company_info_Click);
             // 
             // btn_inventory_info
             // 
             this.btn_inventory_info.Name = "btn_inventory_info";
-            this.btn_inventory_info.Size = new System.Drawing.Size(180, 22);
+            this.btn_inventory_info.Size = new System.Drawing.Size(151, 22);
             this.btn_inventory_info.Text = "تعریف انبار";
             this.btn_inventory_info.Click += new System.EventHandler(this.btn_inventory_info_Click);
             // 
             // btn_groups_info
             // 
             this.btn_groups_info.Name = "btn_groups_info";
-            this.btn_groups_info.Size = new System.Drawing.Size(180, 22);
+            this.btn_groups_info.Size = new System.Drawing.Size(151, 22);
             this.btn_groups_info.Text = "تعریف گروه کالا";
             this.btn_groups_info.Click += new System.EventHandler(this.btn_groups_info_Click);
             // 
             // btn_products_info
             // 
             this.btn_products_info.Name = "btn_products_info";
-            this.btn_products_info.Size = new System.Drawing.Size(180, 22);
+            this.btn_products_info.Size = new System.Drawing.Size(151, 22);
             this.btn_products_info.Text = "تعریف کالا";
             this.btn_products_info.Click += new System.EventHandler(this.btn_products_info_Click);
             // 
             // btn_customers_info
             // 
             this.btn_customers_info.Name = "btn_customers_info";
-            this.btn_customers_info.Size = new System.Drawing.Size(180, 22);
+            this.btn_customers_info.Size = new System.Drawing.Size(151, 22);
             this.btn_customers_info.Text = "تعریف اشخاص";
             this.btn_customers_info.Click += new System.EventHandler(this.btn_customers_info_Click);
             // 
             // btn_users_info
             // 
             this.btn_users_info.Name = "btn_users_info";
-            this.btn_users_info.Size = new System.Drawing.Size(180, 22);
+            this.btn_users_info.Size = new System.Drawing.Size(151, 22);
             this.btn_users_info.Text = "تعریف کاربر";
             // 
             // btn_import_export
@@ -242,13 +242,13 @@ namespace InventoryManagementApplication
             // btn_products_import
             // 
             this.btn_products_import.Name = "btn_products_import";
-            this.btn_products_import.Size = new System.Drawing.Size(161, 22);
+            this.btn_products_import.Size = new System.Drawing.Size(180, 22);
             this.btn_products_import.Text = "ورود کالا";
             // 
             // btn_products_export
             // 
             this.btn_products_export.Name = "btn_products_export";
-            this.btn_products_export.Size = new System.Drawing.Size(161, 22);
+            this.btn_products_export.Size = new System.Drawing.Size(180, 22);
             this.btn_products_export.Text = "خروج کالا";
             // 
             // btn_add_products_inventory
@@ -269,7 +269,7 @@ namespace InventoryManagementApplication
             // btn_set_inventory_exchange
             // 
             this.btn_set_inventory_exchange.Name = "btn_set_inventory_exchange";
-            this.btn_set_inventory_exchange.Size = new System.Drawing.Size(143, 22);
+            this.btn_set_inventory_exchange.Size = new System.Drawing.Size(180, 22);
             this.btn_set_inventory_exchange.Text = "ثبت جابه جایی";
             // 
             // btn_reports
@@ -318,6 +318,7 @@ namespace InventoryManagementApplication
             this.btn_initial_inventory_report.Name = "btn_initial_inventory_report";
             this.btn_initial_inventory_report.Size = new System.Drawing.Size(180, 22);
             this.btn_initial_inventory_report.Text = "گزارش موجودی انبار";
+            this.btn_initial_inventory_report.Click += new System.EventHandler(this.btn_initial_inventory_report_Click);
             // 
             // btn_import_report
             // 

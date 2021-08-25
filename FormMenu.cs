@@ -107,5 +107,10 @@ namespace InventoryManagementApplication
         {
             new FormProductAddInventory().ShowDialog();
         }
+
+        private void btn_initial_inventory_report_Click(object sender, EventArgs e)
+        {
+            new FormInitialInventory().ShowDialog();
+        }
     }
 }
