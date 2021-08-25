@@ -254,8 +254,9 @@ namespace InventoryManagementApplication
             // btn_add_products_inventory
             // 
             this.btn_add_products_inventory.Name = "btn_add_products_inventory";
-            this.btn_add_products_inventory.Size = new System.Drawing.Size(161, 22);
+            this.btn_add_products_inventory.Size = new System.Drawing.Size(180, 22);
             this.btn_add_products_inventory.Text = "افزودن کالا به انبار";
+            this.btn_add_products_inventory.Click += new System.EventHandler(this.btn_add_products_inventory_Click);
             // 
             // btn_inventory_exchange
             // 

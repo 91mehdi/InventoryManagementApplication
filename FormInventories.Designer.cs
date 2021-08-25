@@ -60,7 +60,7 @@ namespace InventoryManagementApplication
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(584, 39);
+            this.groupBox4.Size = new System.Drawing.Size(584, 60);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             // 
